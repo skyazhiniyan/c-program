@@ -1,24 +1,18 @@
 #include <stdio.h>
+#include <string.h>
 int main(){
-    printf("leap year finder");
-    int year;
-    
-    scanf("%d",&year);
-    if(year%100 == 0){
-        if(year%400 == 0){
-            printf("%d is a leap year ",year);
+    char name[500];
 
-        }
-        else{
-            printf("it's not a leap year");
-        }
-    }
-    if (year%4 == 0){
-        printf("it is a leap year");
+    printf("enter 9 name:");
+    scanf("%s", name);
+
+    if (strcmp(name, "anandh") == 0){
+        printf("wow your are right 100 100 super ");
+
     }
     else{
-        printf("its not a  leap year"); 
+        printf("sorry you are wrong enter the rely 9 name ");
     }
-       return 0;
-    }
+    return 0;
 
+}
